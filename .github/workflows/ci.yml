@@ -17,7 +17,7 @@ permissions:
 
 jobs:
   ci:
-    runs-on: ubuntu-slim
+    runs-on: [self-hosted, linux, x64]
     timeout-minutes: 10
     steps:
       - name: Checkout

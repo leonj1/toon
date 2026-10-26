@@ -14,7 +14,7 @@ concurrency:
 jobs:
   lint-pr-title:
     name: Lint PR title
-    runs-on: ubuntu-slim
+    runs-on: [self-hosted, linux, x64]
 
     if: ${{ (github.event.action == 'opened' || github.event.changes.title != null) }}
 
